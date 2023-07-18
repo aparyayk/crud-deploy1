@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--rollno=models.IntegerField()
+    name=models.CharField(max_length=30)
+    dob=models.DateField()
+    marks=models.IntegerField()
+    email=models.EmailField(max_length=30)
+    phonenumber=models.BigIntegerField()
+    address=models.TextField()-->
+</head>
+<body>
+    <h1>Employee Update Form</h1><hr> 
+<form method="POST"> 
+{%csrf_token%} 
+Student Roll Number: <input type="text" name="rollno" value="{{student.rollno}}">
+<p></p> 
+Student Name: <input type="text" name="name" value="{{student.name}}"
+><p></p> 
+Student DOB: <input type="text" name="dob" value="{{student.dob}}">
+<p></p> 
+Student Phone Number: <input type="text" name="phonenumber" value="{{student.phonenumber}}"
+> <p></p> 
+ <input type="submit" class='btn btn-warning btn-lg' value="Update Record"> 
+ </form> 
+</body>
+</html>
